@@ -1,0 +1,15 @@
+<h1> Templete based form</h1>
+
+<form #myform = "ngForm" (ngSubmit) = "onSubmit(myform)" >
+  Name : <input type = "text" name = "fullName" placeholder = "Your full name" ngModel>
+
+
+  Email : <input type = "email" name = "email" placeholder = "Your email" ngModel>
+  <br/><br/>
+  <label>Comments  </label><textarea  name = "message" placeholder = "Your message" ngModel></textarea>
+  <hr/>
+
+
+  <br/>
+  <input type = "submit" value = "Send">
+</form>

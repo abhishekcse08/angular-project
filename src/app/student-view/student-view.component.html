@@ -1,0 +1,18 @@
+<table class="table table-striped border mt-1">
+    <thead>
+        <tr>
+        <th [appSort]="dataList" data-order="desc" data-name="employeeId" scope="col">Employee Id</th>
+        <th [appSort]="dataList" data-order="desc" data-name="employeeName" scope="col">Employee Name</th>
+        <th [appSort]="dataList" data-order="desc" data-name="employeeAge" scope="col">Employee Age</th>
+        <th [appSort]="dataList" data-order="desc" data-name="employeeDOB" scope="col">Employee Date Of Birth</th>
+    </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let data of dataList">
+           <td>{{data.employeeId}}</td> 
+           <td>{{data.employeeName}}</td>
+           <td>{{data.employeeAge}}</td>
+           <td>{{data.employeeDOB}}</td>
+        </tr>
+    </tbody>
+</table>
